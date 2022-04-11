@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Olá</h1>
+
+    <!--Com o jinja, pode-se executar códigos python dentro do html-->
+    <!--Código de logica:-->
+    {% if user %}
+    <p>
+        <!--Código de exibição-->
+        {{user}}
+    </p>
+    {% else %}
+    <p>OK</p>
+    {% endif %} <!--deve-se avisar onde terminam os blocos -->
+</body>
+</html>
